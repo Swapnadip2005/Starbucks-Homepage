@@ -1,0 +1,87 @@
+.more_container {
+  background-color: #edebe9;
+  width: 100%;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.more {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Assets/Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.background_content {
+  background: linear-gradient(
+    359.89deg,
+    #000000bd 19.45%,
+    #00000062 55.07%,
+    #0000 73.63%
+  ) !important;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+  padding: 15px 30px 30px 30px;
+  border-radius: 8px;
+  transition: background-color 0.5s;
+}
+
+.coffee {
+  display: inline-block;
+  background-color: white;
+  color: #00754a;
+  margin-bottom: 150px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 3px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.background_content h1 {
+  margin-bottom: 15px;
+}
+
+.background_content .master {
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+
+.background_content button {
+  background-color: white;
+  color: black;
+  border: none;
+  height: 35px;
+  width: 200px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.background_content:hover {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+@media (min-width: 1440px) {
+  .more {
+    width: 100%;
+    max-width: 1500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .more_container {
+    padding: 0 10px;
+  }
+}

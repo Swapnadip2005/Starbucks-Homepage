@@ -1,0 +1,154 @@
+.nav_container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #1c1c1c1c 1px 1px 2px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 10%;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+.icon {
+  display: none;
+}
+
+.icon .menu_icon {
+  width: 35px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.icon .search_icon {
+  width: 30px;
+  height: auto;
+}
+
+.logo_mid {
+  text-align: center;
+  display: none;
+}
+
+.logo_mid img {
+  width: 40px;
+  height: auto;
+}
+
+.navbar .menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 60px;
+  margin: 30px;
+}
+
+.navbar .menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+.navbar .menu ul .act {
+  color: #00745a;
+  font-weight: 600;
+}
+
+.navbar .menu ul .active {
+  height: 35px;
+  border-bottom: 2px solid #00745a;
+}
+
+.search {
+  width: 25%;
+  min-width: 265px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  box-shadow: 0 0 2px #00000012, 0 2px 2px #0000000f, 0 1px 3px #0000001a;
+}
+
+.search img {
+  margin: 20px;
+}
+
+.search input {
+  width: 100%;
+  margin-right: 20px;
+  font-size: 12px;
+  background-color: transparent;
+  border: none;
+}
+
+::placeholder {
+  color: #00754a;
+}
+
+.profile {
+  text-align: center;
+  margin-left: 20px;
+}
+
+.profile img {
+  height: auto;
+}
+
+.navbar .menu ul a:hover {
+  color: #00754a;
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    width: 100%;
+    max-width: 1500px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .icon {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo_mid {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .search {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav_container {
+    padding: 0 10px;
+  }
+}
